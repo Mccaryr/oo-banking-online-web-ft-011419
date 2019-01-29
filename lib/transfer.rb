@@ -31,8 +31,6 @@ class Transfer
 
   def reverse_transfer
     if @status == "complete"
-      puts "Only executed transfers can be reversed"
-    else
       @receiver.deposit(@amount * -1)
       @sender.deposit(@amount)
       @status = "complete"
