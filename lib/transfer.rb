@@ -34,7 +34,7 @@ class Transfer
       puts "Only executed transfers can be reversed"
     else
       @receiver.deposit(@amount * -1)
-      @sender.deposit(@mount)
+      @sender.deposit(@amount)
       @status = "complete"
     end
   end
