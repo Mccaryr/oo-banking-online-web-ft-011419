@@ -8,6 +8,6 @@ class BankAccount
   end
 
   def deposit(transfer_amount)
-    @balance << transfer_amount
+    self.balance << transfer_amount
   end
 end
