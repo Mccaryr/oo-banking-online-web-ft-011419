@@ -14,6 +14,6 @@ class BankAccount
   end
 
   def deposit(transfer_amount)
-    self.balance << transfer_amount
+    self.all.balance << transfer_amount
   end
 end
