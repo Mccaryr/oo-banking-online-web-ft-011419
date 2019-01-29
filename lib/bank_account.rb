@@ -10,7 +10,7 @@ class BankAccount
   end
 
   def self.all
-    @@all 
+    @@all
   end
 
   def deposit(transfer_amount)
