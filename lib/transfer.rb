@@ -16,15 +16,15 @@ class Transfer
   end
 
   def execute_transaction
-    if @sender.balance < amount
+    if @sender.balance < @amount
       @status = "rejected"
       return "Transaction rejected, you broke dawg"
     elsif
       @status == "complete"
       puts "Transaction has already been executed"
     else
-      @sender.deposit -= amount
-      @receiver.deposit += amount
+      @sender.deposit -= @amount
+      @receiver.deposit += @amount
       @status = "complete"
     end
   end
