@@ -14,7 +14,7 @@ class BankAccount
   end
 
   def deposit(transfer_amount)
-    self.balance + transfer_amount
-    balance
+    balance + transfer_amount
+
   end
 end
