@@ -9,4 +9,5 @@ class BankAccount
 
   def deposit
     @balance << transfer_amount
+  end 
 end
