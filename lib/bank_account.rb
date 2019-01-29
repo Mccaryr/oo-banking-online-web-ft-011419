@@ -9,6 +9,10 @@ class BankAccount
     @@all << self
   end
 
+  def self.all
+    @@all 
+  end
+
   def deposit(transfer_amount)
     self.balance << transfer_amount
   end
