@@ -6,7 +6,7 @@ class BankAccount
     @name=name
     @balance = 1000
     @status= "open"
-    @@all << self 
+    @@all << self
   end
 
   def deposit(transfer_amount)
